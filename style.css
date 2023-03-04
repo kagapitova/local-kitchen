@@ -23,39 +23,47 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-html{
+html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     width: 100%;
     max-width: 100%;
 }
-*,*::before, *::after {
+
+*, *::before, *::after {
     box-sizing: inherit;
 }
+
 .start {
     height: 644px;
     width: 100%;
@@ -132,28 +140,704 @@ html{
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .start_container {
+    background: no-repeat center/100% url(src/320img.svg);
     display: flex;
     padding-left: 10%;
-    width: 89%;
     justify-content: space-between;
 }
 
 .food_start {
-    width: 489px;
-    height: 489px;
-
+    width: 100%;
 }
 
 .img_block_start {
     display: flex;
-    width: 637.05px;
-    height: 549.13px;
-    background: no-repeat center/80% url(src/bg_start.png);
     background-size: 100% 100%;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.products {
+    height: 1006px;
+    display: flex;
+    background: #FAFAFA;
+}
+
+.products_container {
+    display: flex;
+    padding-left: 10%;
+    width: 89%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.takie {
+    position: absolute;
+    z-index: 10;
+    right: 4%;
+    top: 887px;
+}
+
+.syakie {
+    position: absolute;
+    z-index: 10;
+    left: 2%;
+    top: 1500px;
+}
+
+.main_header_products {
+    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.products_text {
+    height: 26px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.products_items_header {
+    display: flex;
+    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.header_products {
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.menu_cards {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card492 {
+    display: flex;
+    width: 48%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 100px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card742 {
+    display: flex;
+    width: 48%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 100px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titel_card {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.text_card {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.img_card {
+
+}
+
+.card_content {
+    width: 65%;
+    height: 17%;
+}
+
+.panel {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.faq_header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.accordion {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    height: 70px;
+}
+
+.active {
+
+}
+
+.prev {
+    width: 42px;
+    height: 42px;
+    background: no-repeat url(src/prev.svg);
+    border: none;
+    cursor: pointer;
+}
+
+.next {
+    width: 42px;
+    height: 42px;
+    background: no-repeat url(src/next.svg);
+    border: none;
+    cursor: pointer;
+}
+
+.faq_container {
+    background-color: #FAFAFA;
+    padding-top: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.faq_header {
+    height: 6%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: 6%;
+}
+
+.accordion {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    width: 85%;
+    height: 106px;
+    width: 100%;
+    background: #CDE7FF;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 24px;
+    padding-left: 50px;
+    padding-top: 30px;
+    transition: 0.7s;
+    border: none;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.active {
+    display: flex;
+    height: 240px;
+    background-color: #FFFFFF;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #333333;
+    font-weight: bold;
+    float: right;
+    margin-right: 50px;
+}
+
+.active:after {
+    margin-top: 18px;
+    content: "\2212";
+}
+
+.panel {
+    width: 87%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel_open {
+    transition: 0.7s;
+    overflow: inherit;
+}
+
+.order {
+    height: 644px;
+    width: 100%;
+    background: #CDE7FF;
+}
+
+.order_container {
+    display: flex;
+    padding-left: 10%;
+    padding-top: 7%;
+    width: 89%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 629px;
+    background: #CDE7FF;
+}
+
+.img_block_order {
+    width: 53%;
+    background: no-repeat center/100% url(src/bg_start.png);
+}
+
+.food_order {
+    height: 90%;
+    width: 90%;
+}
+
+.stiker {
+    position: absolute;
+    padding-bottom: 41%;
+    left: 35%;
+    height: 30%;
+}
+
+.text_order {
+    display: flex;
+    width: 53%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_header_order {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.products_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer_container {
+    display: flex;
+    width: 89%;
+    height: 183px;
+
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.stiker_footer1 {
+    z-index: 10;
+    position: absolute;
+    right: 13%;
+    height: 23%;
+}
+
+.stiker_footer2 {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    height: 23%;
+}
+
+.paymets {
+    width: 25%;
+}
+
+.pay_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.time_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 44%;
+}
+
+.link_text {
+    width: 100%;
+    height: 51px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.links {
+    width: 27%;
+}
+
+.offer {
+    height: 45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+a {
+    color: black;
+}
+
+
+@media screen and (max-width: 900px) {
+    .start_container {
+        background: no-repeat right/100% url(src/320img.svg);
+        width: unset;
+    }
+
+    .img_block_start {
+        display: none;
+    }
+
+    .products {
+        margin-top: 7%;
+        height: unset;
+    }
+
+    .card492 {
+        margin-top: 7%;
+        width: 80%;
+    }
+
+    .card742 {
+        margin-top: 7%;
+        width: 80%;
+    }
+
+    .products_items_header {
+        display: none;
+    }
+
+    .menu_cards {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card_content {
+        margin-bottom: 3%;
+    }
+
+    .faq_container {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .products_text {
+        font-size: 12px;
+    }
+
+    .accordion {
+        font-size: 18px;
+    }
+
+    .panel {
+        font-size: 15px;
+    }
+    .active {
+        height: 270px;
+    }
+    .btn_start {
+        width: 211px;
+        height: 48px;
+        background: #0055A4;
+        border-radius: 100px;
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .pay_text {
+        font-size: 12px;
+    }
+    .time_text {
+        font-size: 12px;
+    }
+
+    .link_text{
+        font-size: 12px;
+    }
+    .offer {
+        font-size: 12px;
+    }
+    .stiker_footer2 {
+        display: none;
+    }
+    .stiker_footer1 {
+        display: none;
+    }
+    .time {
+        width: 15%;
+    }
+    .img_card {
+        border-radius: 62px;
+    }
+    .footer_container {
+        align-items: unset;
+    }
+}
+@media screen and (max-width: 768px) {
+    .stiker_footer {
+        display: none;
+    }
+    .footer_container {
+        width: 100%;
+    }
+    .time {
+        width: 25%;
+    }
+
+
+    .start_container {
+        background: no-repeat center/100% url(src/320img.svg);
+    }
+
+    .titel_card {
+        font-size: 29px;
+    }
+
+    .accordion {
+        font-size: 15px;
+    }
+    .main_header {
+        width: unset;
+        height: unset;
+        font-size: 30px;
+    }
+
+    .main_text_b {
+
+    }
+
+    .main_text {
+        width: unset;
+
+    }
+
+    .takie {
+    display: none;
+    }
+
+    .syakie {
+        display: none;
+    }
+
+    .img_card492 {
+        height: 169px;
+        width: 169px;
+    }
+
+    .img_card742 {
+        height: 169px;
+        width: 169px;
+    }
+    .text_order {
+        width: unset;
+    }
+
+    .text_btn_block_start {
+        width: 544px;
+        height: 611px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 21px;
+    }
+
+    .products {
+        margin-top: 0;
+    }
+
+    .products_container {
+        height:unset;
+    }
+    .products_text {
+        height: 6px;
+    }
+
+    .card742 {
+        width: 100%;
+    }
+
+    .products {
+        height: 750px;
+    }
+    .prev {
+        display: none;
+    }
+    .titel_card {
+        font-size: 18px;
+        text-align: center;
+    }
+    .header_products {
+        height: 169px;
+    }
+
+    .products_text {
+        height: unset;
+    }
+
+    .text_card {
+        display: none;
+    }
+
+    .next {
+        display: none;
+    }
+    .card492 {
+        width: 100%;
+    }
+    .main_header {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .main_header_products {
+        font-size: 30px;
+    }
+    .faq_header {
+        font-size: 30px;
+    }
+
+    .panel {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .accordion_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        width: 87%;
+    }
+    .main_header_order {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .order {
+       height: 560px;
+    }
+    .order_container {
+
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+
+
+
+    .stiker {
+        left: 71%;
+        height: 41%;
+    }
+
+    .products_text {
+        line-height: 15px;
+    }
+    .accordion {
+        width: 100%;
+        height: 48px;
+        padding-top: 11px;
+        padding-left: 20px;
+    }
 }
